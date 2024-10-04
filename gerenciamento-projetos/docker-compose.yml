@@ -13,12 +13,12 @@ services:
     environment:
       - DB_HOST=127.0.0.1
       - DB_USER=root
-      - DB_PASSWORD=Eric_1617
-      - DB_NAME=gerenciamento_projetos
-      - JWT_SECRET=3508feda7455de9aea9c6bf945159b58b8ce5436c07f2850ece1c02321dbdc8c1be511ec6fe545c2f0b6701f75a709b96de6517c23ad31494348dc6e7ce7b7df # Exemplo de segredo para JWT
-      - GOOGLE_CLIENT_ID=37211374993-6b19hni7t9dk97q8nhn4s655kcttdsh4.apps.googleusercontent.com
-      - GOOGLE_CLIENT_SECRET=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
-      - GOOGLE_REFRESH_TOKEN=1//04hxzqko-N9CDCgYIARAAGAQSNwF-L9Ir9nZ1rPTK3DNnVZbWWPKGQ7jFDTxfsLtlIC6f8ShJxL4YSiGwnRWT03itF5gZ6opI2eY
+      - DB_PASSWORD=
+      - DB_NAME=
+      - JWT_SECRET= # Exemplo de segredo para JWT
+      - GOOGLE_CLIENT_ID=
+      - GOOGLE_CLIENT_SECRET=
+      - GOOGLE_REFRESH_TOKEN=
       - GOOGLE_CALENDAR_ID=123aslund123@gmail.com
 
   # Serviço do frontend
@@ -33,7 +33,7 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: Eric_1617
+      MYSQL_ROOT_PASSWORD: 
       MYSQL_DATABASE: gerenciamento_projetos
     volumes:
       - db_data:/var/lib/mysql # Persistência dos dados
