@@ -1,0 +1,51 @@
+/* Estilos para o Modal */
+.modal {
+    @apply bg-white p-6 rounded-lg shadow-lg;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+  }
+  
+  /* Estilos para o Overlay */
+  .overlay {
+    @apply fixed inset-0 bg-gray-500 bg-opacity-50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Título do Modal */
+  .modal h2 {
+    @apply text-2xl font-bold mb-4;
+  }
+  
+  /* Formulário dentro do Modal */
+  .modal form {
+    @apply flex flex-col gap-4;
+  }
+  
+  /* Estilos para Inputs e Textarea */
+  .modal input[type="text"],
+  .modal input[type="datetime-local"],
+  .modal textarea {
+    @apply border border-gray-300 p-2 rounded-md;
+  }
+  
+  /* Estilos para os Botões */
+  .modal button {
+    @apply py-2 px-4 rounded-lg text-white;
+  }
+  
+  .modal .add-projeto-button {
+    @apply bg-blue-500 hover:bg-blue-600;
+  }
+  
+  .modal .cancel-button {
+    @apply bg-gray-500 hover:bg-gray-600;
+  }
+  
+  /* Alinhamento dos Botões */
+  .modal .modal-buttons {
+    @apply flex gap-2;
+  }
+  

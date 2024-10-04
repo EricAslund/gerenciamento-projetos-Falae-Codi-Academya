@@ -1,0 +1,24 @@
+.register-container {
+    @apply flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4;
+  }
+  
+  h2 {
+    @apply text-2xl font-bold mb-6;
+  }
+  
+  .register-form {
+    @apply w-full max-w-md flex flex-col gap-4;
+  }
+  
+  .input-field {
+    @apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600;
+  }
+  
+  .register-button {
+    @apply w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-600;
+  }
+  
+  .error-message {
+    @apply text-red-600 mb-4;
+  }
+  

@@ -1,0 +1,58 @@
+.projetos-container {
+  @apply flex flex-col items-center justify-center p-4 sm:p-6 bg-gray-100 min-h-screen;
+}
+
+.projetos-title {
+  @apply text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-gray-800;
+}
+
+.projetos-table {
+  @apply w-full sm:max-w-4xl table-auto bg-white shadow-lg rounded-lg mt-4 sm:mt-6 overflow-x-auto;
+}
+
+.projetos-table th, .projetos-table td {
+  @apply px-4 sm:px-6 py-2 sm:py-3 border border-gray-300 text-center text-sm sm:text-base;
+}
+
+.projetos-table th {
+  @apply bg-gray-200 text-gray-700 font-medium;
+}
+
+.edit-button, .delete-button {
+  @apply py-1 px-2 text-white rounded-lg m-1 text-xs sm:text-sm;
+}
+
+.edit-button {
+  @apply bg-yellow-500 hover:bg-yellow-400;
+}
+
+.delete-button {
+  @apply bg-red-600 hover:bg-red-500;
+}
+
+.pagination-controls {
+  @apply flex flex-col sm:flex-row items-center justify-between mt-4 sm:mt-6 w-full max-w-full sm:max-w-lg space-y-2 sm:space-y-0;
+}
+
+.pagination-button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 disabled:bg-gray-300 text-sm sm:text-base;
+}
+
+/* Estilo comum para botões */
+.button-base {
+  @apply py-2 px-4 rounded-lg text-white font-semibold transition-colors duration-300 ease-in-out;
+}
+
+.add-projeto-button {
+  @apply bg-blue-500 hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base;
+}
+
+/* Botão específico para upload CSV */
+.upload-csv-button {
+  @apply bg-green-500 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base;
+}
+
+/* Container para botões alinhados horizontalmente */
+.buttons-container {
+  @apply flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4; /* Ajuste flexível para alinhamento */
+}
